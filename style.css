@@ -1,0 +1,245 @@
+/* --- Generales --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+section {
+    padding: 60px 0;
+    margin-bottom: 10vh;
+}
+
+p {
+    margin-bottom: 5vh;
+    }
+
+.container {
+    max-width: 1200px;
+    margin: 4vh auto;
+    padding: 0 20px;;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #700707;
+}
+
+h1 { 
+    
+    font-size: 2.5rem; 
+}
+h2 { 
+     text-align: center;
+    font-size: 1.8rem; 
+    border-bottom: 2px solid #eeeeee; 
+    padding-bottom: 10px; 
+}
+
+/* --- Navegación --- */
+
+header {
+    max-height: 30vh;
+    background-color: #000000;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navs {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navs a {
+    text-decoration: none;
+    color: #700707;
+    font-weight: bold;
+}
+
+footer {
+    background: #700707;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid #eeeeee;
+}
+
+.footerContenido {
+    display: flex;
+    gap: 20px;
+    color: #dddddd;
+}
+
+/* --- Layout --- */
+
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.placeholder {
+    background-color: #f0f0f0;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+    font-weight: bold;
+}
+
+.hero-img { 
+    width: 100%; aspect-ratio: 1/1; 
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: 500px;
+}
+.icono { 
+    height: 150px; 
+    width: 150px; 
+    margin-bottom: 15px;
+    color: #700707; 
+}
+.projectos { 
+    width: 100%; 
+    height: 300px;
+    border: 2px solid #000000;
+    margin-bottom: 15px; 
+}
+
+.galeria { 
+    height: 100vh; 
+}
+
+.galeria .placeholder {
+    height: 300px;
+    width: 100%;
+}
+
+.galeria .placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjetas {
+    border: 1px solid #eeeeee;
+    padding: 30px;
+    background: #ffffff;
+}
+
+.experiencia {
+    text-align: center;
+    border: 1px solid #eeeeee;
+    padding: 40px;
+}
+
+.experiencia h2 { 
+    font-size: 3rem; border: none; margin: 0; 
+}
+
+.skills-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.barra { background-color: #dddddd;
+height: 10px;
+border-radius: 5px;
+overflow: hidden;
+}
+.barra-fill {
+  height: 100%;
+  background-color: #700707;
+}
+.skill-fila {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.testimonios {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    height: auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* --- Formularios --- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, texto {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    background: #fafafa;
+}
+
+button {
+    padding: 12px 24px;
+    background: #333333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rol {
+    background-color: #000000;
+   color: #f0f0f0;
+
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .grid-2, .grid-3, .hero {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .hero-img { order: -1; }
+}
